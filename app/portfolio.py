@@ -1,7 +1,7 @@
-from fastapi import APIRouter, HTTPException, Depends
+from fastapi import APIRouter
 from pydantic import BaseModel
-from .database import database
-from .dbmodels import portfolios
+from app.db.database import database
+from app.models.dbmodels import portfolios
 
 router = APIRouter()
 
